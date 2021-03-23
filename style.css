@@ -1,5 +1,19 @@
+body {
+    background-color:black;
+    font-family: 'Courier New', monospace;
+    color: chartreuse;
+}
 
+.box-set {
+    position: relative;
+    height: 60px;
+    background: #1400CF;
+}
 
-.nav-menu {
-    
+.bg-nav {
+    background-color: blue;
+}
+
+.text-nav {
+    color: chartreuse;
 }
