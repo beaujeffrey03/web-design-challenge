@@ -1,19 +1,114 @@
-body {
-    background-color:black;
-    font-family: 'Courier New', monospace;
+h1 {
     color: chartreuse;
+    font-family: 'Courier New', monospace;
+    text-align: center;
 }
 
-.box-set {
-    position: relative;
-    height: 60px;
-    background: #1400CF;
+p {
+    color: chartreuse;
+    font-family: 'Courier New', monospace;
+    margin: 5px;
 }
 
-.bg-nav {
+.body-bg {
+    background-color: black;
+}
+
+.nav-bg-blue {
     background-color: blue;
 }
 
-.text-nav {
+.text-color {
     color: chartreuse;
+}
+
+.main-font {
+    font-family: 'Courier New', monospace;
+}
+
+.main-box-right {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 515px;
+    height: 420px;
+    background:black;
+    outline-style: dotted;
+    outline-color: chartreuse;
+}
+
+.m-box {
+    /* Absolute Position */
+    position: absolute;
+    width: 230px;
+    height: 155px;
+    background:black;
+    outline-style: solid;
+    outline-color: chartreuse;
+    outline-width: thin;
+    border: 2px solid black;
+}
+
+.m-box-1 {
+    top: 15%;
+    left: 3%;
+}
+
+.m-box-2 {
+    top: 15%;
+    right: 3%;
+}
+
+.m-box-3 {
+    bottom: 2%;
+    left: 3%;
+}
+
+.m-box-4 {
+    bottom: 2%;
+    right: 3%;
+}
+
+.m-box-5 {
+    top: 10%;
+    left: 3%;
+}
+
+.m-images {
+    display: block;
+    height: 145px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-box-left {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 825px;
+    height: 625px;
+    background:black;
+    outline-style: dotted;
+    outline-color: chartreuse;
+}
+
+.m-box-left {
+    /* Absolute Position */
+    position: absolute;
+    width: 430px;
+    height: 300px;
+    background:black;
+    outline-style: solid;
+    outline-color: chartreuse;
+    outline-width: thin;
+    border: 2px solid black;
+    margin: 10px;
+    float: left;
+}
+
+.m-images-left {
+    display: block;
+    height: 290px;
+    float: left;
+    padding: 10px 15px 10px 15px;
 }
