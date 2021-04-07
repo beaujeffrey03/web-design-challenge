@@ -8,82 +8,106 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class='body-bg'>
-  <nav class="navbar navbar-expand-lg navbar-light nav-bg-blue text-color main-font">
-    <a class="navbar-brand" href="index.html"> Latitude </a>
+<body class='body-bg main-font'>
+  <nav class="navbar navbar-expand-lg nav-bg-blue">
+    <a class="navbar-brand" href="index.html"> <img src="/resources/assets/images/main_nav.png"> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle nav-bg-blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu nav-bg-blue" aria-labelledby="navbarDropdownLink">
-            <a class="dropdown-item nav-bg-blue text-color" href="max_temp.html"> Max Temperature </a>
-            <a class="dropdown-item nav-bg-blue text-color" href="humidity.html"> Humidity </a>
-            <a class="dropdown-item nav-bg-blue text-color" href="cloudiness.html"> Cloudiness </a>
-            <a class="dropdown-item nav-bg-blue text-color" href="wind_speed.html"> Wind Speed </a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='comparison.html'> Comparison </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='data.html'> Data </a>
-        </li>
-    </div>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-bg-blue nav-text-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu nav-bg-blue" aria-labelledby="navbarDropdownLink">
+          <a class="dropdown-item nav-bg-blue nav-text-color" href="max_temp.html"> Max Temperature </a>
+          <a class="dropdown-item nav-bg-blue nav-text-color" href="humidity.html"> Humidity </a>
+          <a class="dropdown-item nav-bg-blue nav-text-color" href="cloudiness.html"> Cloudiness </a>
+          <a class="dropdown-item nav-bg-blue nav-text-color" href="wind_speed.html"> Wind Speed </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-text-color" href='comparison.html'> Comparison </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-text-color" href='data.html'> Data </a>
+      </li>
   </nav>
 
-  <div class='main-box-right'>
-    <h1 class='text-color main-font'>
-      Visualizations
-    </h1>
-    <figure class='m-box m-box-1'> 
-      <a href="max_temp.html">
-      <img src="resources/assets/images/Fig1.png" alt="Max Temp Chart" class='m-images'>
-      </a>
-    </figure>
-    <figure class='m-box m-box-2'> 
-      <a href="humidity.html">
-      <img src="resources/assets/images/Fig2.png" alt="Humidity Chart" class='m-images'>
-      </a>
-    </figure>
-    <figure class='m-box m-box-3'> 
-      <a href="cloudiness.html">
-      <img src="resources/assets/images/Fig3.png" alt="Cloudiness Chart" class='m-images'>
-      </a>
-    </figure>
-    <figure class='m-box m-box-4'> 
-      <a href="wind_speed.html">
-      <img src="resources/assets/images/Fig4.png" alt="Humidity Chart" class='m-images'>
-      </a>
-    </figure>
-  </div>
-
-  <div class='main-box-left'>
-    <h1> Summary: Latitude vs. X </h1>
-    <a href="max_temp.html">
-    <img src="resources/assets/images/Fig1.png" alt="Max Temp Chart" class='m-images-left'>
-    </a>
-  <p> This website examines the relationship between the weather and the proximity to the equator. This was
-    accomplished by pulling data from the OpenWeatherMap API and building a dataset of approximately 500 cities. <br/>
-    <br/>
-    The information was organized into a dataframe using the Python Pandas library and charts are created using Matplotlib.
-    A number of weather-related factors were considered during this process and can be looked into further throughout this website.
-    These factors are: maximum temperature, cloudiness, wind speed, and humidity. <br/>
-    <br/>
-    Try not to get too excited! <br/>
-    <br/>
-    Enjoy!
-  </p>
-  </div>
-
-</body>
-
-
+      <div class='row space'>
+        <div class='col-md-8 thumbnail'>
+            <div id='index_main_img_div'>
+              <img src='resources/assets/images/Fig1.png' class='main-box-left'>
+            </div>
+          <h3 >
+            This may blow your mind, but
+          </h3>
+          <h1>
+            WEATHER IS DIFFERENT IN DIFFERENT PARTS OF THE WORLD!
+          </h1>
+          <p> This website examines the relationship between the weather and the proximity to the equator. This was
+            accomplished by pulling data from the OpenWeatherMap API and building a dataset of approximately 500 cities. <br/>
+            <br/>
+            The information was organized into a dataframe using the Python Pandas library and charts are created using Matplotlib.
+            A number of weather-related factors were considered during this process and can be looked into further throughout this website.
+            These factors are: maximum temperature, cloudiness, wind speed, and humidity. <br/>
+            <br/>
+            Try not to get too excited! <br/>
+            <br/>
+            Enjoy!
+          </p>
+        </div>
+        <div class='col-md-4 main-box-right'>
+          <h3>
+            VISUALIZATIONS
+          </h3>
+          <div class='row'>
+            <div class='col-md thumbnail'>
+              <a href="max_temp.html">
+              <img src="resources/assets/images/Fig1.png" alt="Max Temp Chart" class='image' style='height: 125px;'>
+              </a>
+              <div class='text-overlay'>
+                <h3>
+                  <a href="max_temp.html" class='link-text-color'> max temp. </a>
+                </h3>
+              </div>
+            </div>
+            <div class='col-md thumbnail'>
+              <a href="humidity.html">
+              <img src="resources/assets/images/Fig2.png" href="humidity.html" alt="Humidity Chart" class='image' style='height: 125px;'>
+              </a>
+              <div class='text-overlay'>
+                <h3>
+                  <a href="humidity.html" class='link-text-color'> humidity </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md thumbnail'>
+              <a href="cloudiness.html">
+              <img src="resources/assets/images/Fig3.png" alt="Cloudiness Chart" class='image' style='height: 125px;'>
+              </a>
+              <div class='text-overlay'>
+                <h3>
+                  <a href="cloudiness.html" class='link-text-color'> cloudiness </a>
+                </h3>
+              </div>
+            </div>
+            <div class='col-md thumbnail'>
+              <a href="wind_speed.html">
+              <img src="resources/assets/images/Fig4.png" alt="Wind Speed Chart" class='image' style='height: 125px;'>
+              </a>
+              <div class='text-overlay'>
+                <h3>
+                  <a href="wind_speed.html" class='link-text-color'> wind speed </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body> 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

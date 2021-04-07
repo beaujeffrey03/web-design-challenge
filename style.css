@@ -4,7 +4,19 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    color: chartreuse;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
 p {
+    color: chartreuse;
+    font-family: 'Courier New', monospace;
+    margin: 5px;
+}
+
+marquee {
     color: chartreuse;
     font-family: 'Courier New', monospace;
     margin: 5px;
@@ -18,97 +30,104 @@ p {
     background-color: blue;
 }
 
-.text-color {
+.nav-text-color {
     color: chartreuse;
+}
+
+.nav-text-color:hover {
+    color: chartreuse;
+    text-decoration: underline;
+    background-color: blue;
+}
+
+.link-text-color {
+    color: chartreuse;
+}
+
+.link-text-color:hover {
+    color: chartreuse;
+    text-decoration: underline;
 }
 
 .main-font {
     font-family: 'Courier New', monospace;
 }
 
+.space {
+    margin: 20px;
+}
+
 .main-box-right {
-    position: absolute;
     top: 10%;
-    right: 2%;
-    width: 515px;
-    height: 420px;
     background:black;
     outline-style: dotted;
     outline-color: chartreuse;
 }
 
-.m-box {
-    /* Absolute Position */
-    position: absolute;
-    width: 230px;
-    height: 155px;
-    background:black;
-    outline-style: solid;
-    outline-color: chartreuse;
-    outline-width: thin;
-    border: 2px solid black;
-}
-
-.m-box-1 {
-    top: 15%;
-    left: 3%;
-}
-
-.m-box-2 {
-    top: 15%;
-    right: 3%;
-}
-
-.m-box-3 {
-    bottom: 2%;
-    left: 3%;
-}
-
-.m-box-4 {
-    bottom: 2%;
-    right: 3%;
-}
-
-.m-box-5 {
-    top: 10%;
-    left: 3%;
-}
-
-.m-images {
+.image-plots {
     display: block;
-    height: 145px;
+    backface-visibility: hidden;
     margin-left: auto;
     margin-right: auto;
-}
+  }
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .text-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .thumbnail:hover .image {
+    opacity: 0.3;
+  }
+  
+  .thumbnail:hover .text-overlay {
+    opacity: 1;
+  }
 
 .main-box-left {
-    position: absolute;
-    top: 10%;
-    left: 2%;
-    width: 825px;
-    height: 625px;
-    background:black;
-    outline-style: dotted;
-    outline-color: chartreuse;
-}
-
-.m-box-left {
-    /* Absolute Position */
-    position: absolute;
-    width: 430px;
-    height: 300px;
+    position: relative;
+    width: 400px;
     background:black;
     outline-style: solid;
     outline-color: chartreuse;
     outline-width: thin;
     border: 2px solid black;
-    margin: 10px;
+    margin: 25px;
     float: left;
 }
 
-.m-images-left {
-    display: block;
-    height: 290px;
-    float: left;
-    padding: 10px 15px 10px 15px;
+#comp-humidity {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.links {
+    color:rgb(255, 174, 0);
+    text-decoration: underline;
+}
+
+.links:hover {
+    color: rgb(129, 88, 0);
+    text-decoration: underline;
 }

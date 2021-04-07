@@ -8,34 +8,94 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class='body-bg'>
-  <nav class="navbar navbar-expand-lg navbar-light nav-bg-blue text-color main-font">
-    <a class="navbar-brand" href="index.html"> Latitude </a>
+<body class='body-bg main-font'>
+  <nav class="navbar navbar-expand-lg nav-bg-blue">
+    <a class="navbar-brand" href="index.html"> <img src="/resources/assets/images/main_nav.png"> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle nav-bg-blue" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu nav-bg-blue" aria-labelledby="navbarDropdownLink">
-            <a class="dropdown-item nav-bg-blue text-color" href="max_temp.html"> Max Temperature </a>
-            <a class="dropdown-item nav-bg-blue text-color" href="humidity.html"> Humidity </a>
-            <a class="dropdown-item nav-bg-blue text-color" href="cloudiness.html"> Cloudiness </a>
-            <a class="dropdown-item nav-bg-blue text-color" href="wind_speed.html"> Wind Speed </a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='comparison.html'> Comparison </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='data.html'> Data </a>
-        </li>
-    </div>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-bg-blue nav-text-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu nav-bg-blue" aria-labelledby="navbarDropdownLink">
+          <a class="dropdown-item nav-bg-blue nav-text-color" href="max_temp.html"> Max Temperature </a>
+          <a class="dropdown-item nav-bg-blue nav-text-color" href="humidity.html"> Humidity </a>
+          <a class="dropdown-item nav-bg-blue nav-text-color" href="cloudiness.html"> Cloudiness </a>
+          <a class="dropdown-item nav-bg-blue nav-text-color" href="wind_speed.html"> Wind Speed </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-text-color" href='comparison.html'> Comparison </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-text-color" href='data.html'> Data </a>
+      </li>
   </nav>
+
+  <marquee>
+    Click on any image for an in-depth analysis ~ Click on any image for an in-depth analysis ~ Click on any image for an in-depth analysis ~ Click on any image for an in-depth analysis ~ Click on any image for an in-depth analysis
+  </marquee>
+  <div class='container'>
+    <div class='row space'>
+      <div class='col-md-6 thumbnail'>
+        <h3>
+          vs. Max Temperature
+        </h3>
+        <a href="max_temp.html">
+        <img src="resources/assets/images/Fig1.png" alt="Max Temp Chart" class='image' style='height: 350px;'>
+        </a>
+        <div class='text-overlay'>
+          <h3>
+            <a href="max_temp.html" class='link-text-color'> temp to the max! </a>
+          </h3>
+        </div>
+      </div>
+      <div class='col-md-6 thumbnail'>
+        <h3>
+          vs. Humidity
+        </h3>
+        <a href="humidity.html">
+        <img src="resources/assets/images/Fig2.png" alt="Humidity Chart" class='image' style='height: 350px;'>
+        </a>
+        <div class='text-overlay'>
+          <h3>
+            <a href="humidity.html" class='link-text-color'> steaminess </a>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class='row space'>
+      <div class='col-md-6 thumbnail'>
+        <h3>
+          vs. Cloudiness
+        </h3>
+        <a href="cloudiness.html">
+        <img src="resources/assets/images/Fig3.png" alt="Cloudiness Chart" class='image' style='height: 350px;'>
+        </a>
+        <div class='text-overlay'>
+          <h3>
+            <a href="cloudiness.html" class='link-text-color'> not sunnyness </a>
+          </h3>
+        </div>
+      </div>
+      <div class='col-md-6 thumbnail'>
+        <h3>
+          vs. Wind Speed
+        </h3>
+        <a href="wind_speed.html">
+        <img src="resources/assets/images/Fig4.png" alt="Wind Speed Chart" class='image' style='height: 350px;'>
+        </a>
+        <div class='text-overlay'>
+          <h3>
+            <a href="wind_speed.html" class='link-text-color'> tornado town! </a>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
